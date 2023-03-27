@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var Payment_js_1 = require("./Payment.js");
+var Invoice_1 = require("./Invoice");
+var docOne;
+var docTwo;
+docOne = new Invoice_1.Invoice("Iphone", "Mobile", 5000);
+docTwo = new Payment_js_1.Payment(500, "Viay", 80000);
+var docs = [];
+docs.push(docOne);
+docs.push(docTwo);
+console.log(docs);
